@@ -1,45 +1,73 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="io.bglwallet" version="0.9.2" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="io.bglwallet" version="0.9.2" xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets">
 	<name>Bitgesell Wallet</name>
 	<description>Bitgesell Wallet - сross-platform wallet for BGL cryptocurrency.</description>
 	<author email="entusoft@gmail.com" href="https://bglwallet.io">Epexa</author>
 	<content src="index.html" />
-	<preference name="phonegap-version" value="cli-9.0.0" />
+	<preference name="target-device" value="universal"/>
 	<preference name="BackgroundColor" value="0xffffffff" />
 	<preference name="DisallowOverscroll" value="true" />
 	<preference name="StatusBarBackgroundColor" value="#fff" />
 	<preference name="StatusBarStyle" value="lightcontent" />
-	<plugin name="cordova-plugin-inappbrowser" spec="3.2.0" />
+	<preference name="SplashScreen" value="screen"/>
+	<preference name="SplashScreenDelay" value="0"/>
+	<preference name="FadeSplashScreen" value="false"/>
+	<preference name="ShowSplashScreenSpinner" value="false"/>
+	<plugin name="cordova-plugin-inappbrowser" spec="4.1.0" />
+	<plugin name="cordova-plugin-splashscreen" spec="6.0.0" />
 	<plugin name="cordova-plugin-statusbar" spec="2.4.3" />
 	<plugin name="cordova-plugin-whitelist" spec="1.3.4" />
 	<platform name="android">
 		<preference name="android-targetSdkVersion" value="29" />
-		<icon density="mdpi" src="res/icon/android/mipmap-hdpi.png" />
-		<icon density="hdpi" src="res/icon/android/mipmap-mdpi.png" />
-		<icon density="xhdpi" src="res/icon/android/mipmap-xhdpi.png" />
-		<icon density="xxhdpi" src="res/icon/android/mipmap-xxhdpi.png" />
-		<icon density="xxxhdpi" src="res/icon/android/mipmap-xxxhdpi.png" />
+		<icon density="mdpi" src="res/android/icon/mipmap-hdpi.png" />
+		<icon density="hdpi" src="res/android/icon/mipmap-mdpi.png" />
+		<icon density="xhdpi" src="res/android/icon/mipmap-xhdpi.png" />
+		<icon density="xxhdpi" src="res/android/icon/mipmap-xxhdpi.png" />
+		<icon density="xxxhdpi" src="res/android/icon/mipmap-xxxhdpi.png" />
+		<splash src="res/android/screen/drawable-port-ldpi-screen.png" density="port-ldpi"/>
+		<splash src="res/android/screen/drawable-port-mdpi-screen.png" density="port-mdpi"/>
+		<splash src="res/android/screen/drawable-port-hdpi-screen.png" density="port-hdpi"/>
+		<splash src="res/android/screen/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+		<splash src="res/android/screen/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+		<splash src="res/android/screen/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
 		<edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:label='@string/activity_name']" mode="merge">
 			<activity android:theme="@android:style/Theme.Material.Light.NoActionBar"></activity>
 		</edit-config>
 	</platform>
 	<platform name="ios">
-		<icon platform="ios" src="res/icon/ios/ipad_notification20x20.png" height="20" width="20" />
-		<icon platform="ios" src="res/icon/ios/ipad_settings29x29.png" height="29" width="29" />
-		<icon platform="ios" src="res/icon/ios/iphone_notification20x20@2x.png" height="40" width="40" />
-		<icon platform="ios" src="res/icon/ios/iphone_settings29x29@2x.png" height="58" width="58" />
-		<icon platform="ios" src="res/icon/ios/iphone_notification20x20@3x.png" height="60" width="60" />
-		<icon platform="ios" src="res/icon/ios/ipad_app76x76.png" height="76" width="76" />
-		<icon platform="ios" src="res/icon/ios/iphone_spotlight40x40@2x.png" height="80" width="80" />
-		<icon platform="ios" src="res/icon/ios/iphone_settings29x29@3x.png" height="87" width="87" />
-		<icon platform="ios" src="res/icon/ios/iphone_app60x60@2x.png" height="120" width="120" />
-		<icon platform="ios" src="res/icon/ios/ipad_app76x76@2x.png" height="152" width="152" />
-		<icon platform="ios" src="res/icon/ios/ipad_pro_app83.5x83.5@2x.png" height="167" width="167" />
-		<icon platform="ios" src="res/icon/ios/iphone_app60x60@3x.png" height="180" width="180" />
-		<icon platform="ios" src="res/icon/ios/ios_marketing1024x1024.png" height="1024" width="1024" />
+		<icon platform="ios" src="res/ios/icon/ipad_notification20x20.png" height="20" width="20" />
+		<icon platform="ios" src="res/ios/icon/ipad_settings29x29.png" height="29" width="29" />
+		<icon platform="ios" src="res/ios/icon/iphone_notification20x20@2x.png" height="40" width="40" />
+		<icon platform="ios" src="res/ios/icon/iphone_settings29x29@2x.png" height="58" width="58" />
+		<icon platform="ios" src="res/ios/icon/iphone_notification20x20@3x.png" height="60" width="60" />
+		<icon platform="ios" src="res/ios/icon/ipad_app76x76.png" height="76" width="76" />
+		<icon platform="ios" src="res/ios/icon/iphone_spotlight40x40@2x.png" height="80" width="80" />
+		<icon platform="ios" src="res/ios/icon/iphone_settings29x29@3x.png" height="87" width="87" />
+		<icon platform="ios" src="res/ios/icon/iphone_app60x60@2x.png" height="120" width="120" />
+		<icon platform="ios" src="res/ios/icon/ipad_app76x76@2x.png" height="152" width="152" />
+		<icon platform="ios" src="res/ios/icon/ipad_pro_app83.5x83.5@2x.png" height="167" width="167" />
+		<icon platform="ios" src="res/ios/icon/iphone_app60x60@3x.png" height="180" width="180" />
+		<icon platform="ios" src="res/ios/icon/ios_marketing1024x1024.png" height="1024" width="1024" />
+		<icon platform="ios" src="res/ios/icon/icon.png" width="57" height="57"/>
+		<icon platform="ios" src="res/ios/icon/icon@2x.png" width="114" height="114"/>
+		<icon platform="ios" src="res/ios/icon/icon-72.png" width="72" height="72"/>
+		<icon platform="ios" src="res/ios/icon/icon-72@2x.png" width="144" height="144"/>
+		<icon platform="ios" src="res/ios/icon/icon-50.png" width="50" height="50"/>
+		<icon platform="ios" src="res/ios/icon/icon-50@2x.png" width="100" height="100"/>
+		<splash src="res/ios/screen/Default@2x~universal~anyany.png"/>
+		<splash src="res/ios/screen/Default~iphone.png" width="320" height="480"/>
+		<splash src="res/ios/screen/Default@2x~iphone.png" width="640" height="960"/>
+		<splash src="res/ios/screen/Default-568h@2x~iphone.png" width="640" height="1136"/>
+		<splash src="res/ios/screen/Default-667h.png" width="750" height="1334"/>
+		<splash src="res/ios/screen/Default-736h.png" width="1242" height="2208"/>
+		<splash src="res/ios/screen/Default-Landscape-736h.png" width="2208" height="1242"/>
+		<splash src="res/ios/screen/Default-Portrait~ipad.png" width="768" height="1024"/>
+		<splash src="res/ios/screen/Default-Landscape~ipad.png" width="1024" height="768"/>
+		<splash src="res/ios/screen/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+		<splash src="res/ios/screen/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
 		<allow-intent href="itms:*" />
 		<allow-intent href="itms-apps:*" />
-		<plugin name="cordova-plugin-wkwebview-file-xhr" spec="2.1.3" />
+		<plugin name="cordova-plugin-wkwebview-file-xhr" spec="3.0.0" />
 	</platform>
 	<allow-navigation href="https://bgl.bitaps.com/*" />
 	<allow-navigation href="https://github.com/*" />

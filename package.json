@@ -1,6 +1,6 @@
 {
   "name": "bitgesell-wallet",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "displayName": "Bitgesell Wallet",
   "cordova": {
     "platforms": [
@@ -8,7 +8,6 @@
       "android"
     ],
     "plugins": {
-      "cordova-plugin-whitelist": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-inappbrowser": {},
@@ -16,8 +15,8 @@
     }
   },
   "dependencies": {
-    "cordova-android": "9.0.0",
-    "cordova-ios": "6.1.1",
+    "cordova-android": "10.1.2",
+    "cordova-ios": "6.2.0",
     "cordova-plugin-inappbrowser": "4.1.0",
     "cordova-plugin-splashscreen": "6.0.0",
     "cordova-plugin-statusbar": "2.4.3",
@@ -25,6 +24,6 @@
     "cordova-plugin-wkwebview-file-xhr": "3.0.0"
   },
   "devDependencies": {
-    "cordova": "^10.0.0"
+    "cordova": "^11.0.0"
   }
 }

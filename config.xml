@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" id="io.bglwallet" version="0.9.5">
+<widget xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" id="io.bglwallet" version="0.9.6">
 	<name>Bitgesell Wallet</name>
 	<description>Bitgesell Wallet - cross-platform wallet for BGL cryptocurrency.</description>
 	<author email="entusoft@gmail.com" href="https://bglwallet.io">Epexa</author>
@@ -16,9 +16,8 @@
 	<plugin name="cordova-plugin-inappbrowser" spec="4.1.0"/>
 	<plugin name="cordova-plugin-splashscreen" spec="6.0.0"/>
 	<plugin name="cordova-plugin-statusbar" spec="2.4.3"/>
-	<plugin name="cordova-plugin-whitelist" spec="1.3.4"/>
 	<platform name="android">
-		<preference name="android-targetSdkVersion" value="29"/>
+		<preference name="android-targetSdkVersion" value="31"/>
 		<icon density="mdpi" src="res/android/icon/mipmap-hdpi.png"/>
 		<icon density="hdpi" src="res/android/icon/mipmap-mdpi.png"/>
 		<icon density="xhdpi" src="res/android/icon/mipmap-xhdpi.png"/>
@@ -30,9 +29,7 @@
 		<splash src="res/android/screen/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
 		<splash src="res/android/screen/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
 		<splash src="res/android/screen/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
-		<edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:label='@string/activity_name']" mode="merge">
-			<activity android:theme="@android:style/Theme.Material.Light.NoActionBar"/>
-		</edit-config>
+		<preference name="AndroidPostSplashScreenTheme" value="@style/Theme.AppCompat.Light.NoActionBar"/>
 	</platform>
 	<platform name="ios">
 		<icon platform="ios" src="res/ios/icon/ipad_notification20x20.png" height="20" width="20"/>
@@ -71,6 +68,8 @@
 	</platform>
 	<allow-navigation href="https://bgl.bitaps.com/*"/>
 	<allow-navigation href="https://github.com/*"/>
+	<allow-navigation href="https://coinmarketcap.com/*"/>
+	<allow-navigation href="https://bglswap.com/*"/>
 	<allow-intent href="bgl:*"/>
 	<access origin="*"/>
 </widget>

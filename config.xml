@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" id="io.bglwallet" version="0.9.8">
+<widget xmlns:android="http://schemas.android.com/apk/res/android" xmlns="http://www.w3.org/ns/widgets" id="io.bglwallet" version="0.9.9">
 	<name>Bitgesell Wallet</name>
 	<description>Bitgesell Wallet - cross-platform wallet for BGL cryptocurrency.</description>
-	<author email="entusoft@gmail.com" href="https://bglwallet.io">Epexa</author>
+	<author email="admin@bitgesell.app" href="https://bitgesell.app">Bitgesell.App</author>
 	<content src="index.html"/>
 	<preference name="target-device" value="universal"/>
 	<preference name="BackgroundColor" value="0xffffffff"/>
@@ -13,11 +13,13 @@
 	<preference name="SplashScreenDelay" value="0"/>
 	<preference name="FadeSplashScreen" value="false"/>
 	<preference name="ShowSplashScreenSpinner" value="false"/>
-	<plugin name="cordova-plugin-inappbrowser" spec="5.0.0"/>
+	<plugin name="cordova-plugin-inappbrowser" spec="6.0.0"/>
 	<plugin name="cordova-plugin-splashscreen" spec="6.0.2"/>
-	<plugin name="cordova-plugin-statusbar" spec="3.0.0"/>
+	<plugin name="cordova-plugin-statusbar" spec="4.0.0"/>
 	<platform name="android">
-		<preference name="android-targetSdkVersion" value="34"/>
+		<preference name="android-targetSdkVersion" value="35"/>
+		<preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/android/icon/mipmap-xxxhdpi.png" />
+		<preference name="AndroidWindowSplashScreenBackground" value="#ffffff" />
 		<icon density="ldpi" src="res/android/icon/mipmap-ldpi.png"/>
 		<icon density="hdpi" src="res/android/icon/mipmap-mdpi.png"/>
 		<icon density="mdpi" src="res/android/icon/mipmap-hdpi.png"/>
@@ -53,19 +55,9 @@
 		<icon platform="ios" src="res/ios/icon/icon-50.png" width="50" height="50"/>
 		<icon platform="ios" src="res/ios/icon/icon-50@2x.png" width="100" height="100"/>
 		<splash src="res/ios/screen/Default@2x~universal~anyany.png"/>
-		<splash src="res/ios/screen/Default~iphone.png" width="320" height="480"/>
-		<splash src="res/ios/screen/Default@2x~iphone.png" width="640" height="960"/>
-		<splash src="res/ios/screen/Default-568h@2x~iphone.png" width="640" height="1136"/>
-		<splash src="res/ios/screen/Default-667h.png" width="750" height="1334"/>
-		<splash src="res/ios/screen/Default-736h.png" width="1242" height="2208"/>
-		<splash src="res/ios/screen/Default-Landscape-736h.png" width="2208" height="1242"/>
-		<splash src="res/ios/screen/Default-Portrait~ipad.png" width="768" height="1024"/>
-		<splash src="res/ios/screen/Default-Landscape~ipad.png" width="1024" height="768"/>
-		<splash src="res/ios/screen/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
-		<splash src="res/ios/screen/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
 		<allow-intent href="itms:*"/>
 		<allow-intent href="itms-apps:*"/>
-		<plugin name="cordova-plugin-wkwebview-file-xhr" spec="3.1.0"/>
+		<plugin name="cordova-plugin-wkwebview-file-xhr" spec="3.1.1"/>
 	</platform>
 	<allow-navigation href="data:*"/>
 	<allow-intent href="https://bgl.bitaps.com/*"/>

@@ -5,7 +5,7 @@
 ## Build versions
 
 - ### Android: https://play.google.com/store/apps/details?id=io.bglwallet
-- ### Android (APK): https://github.com/epexa/bitgesell-wallet-desktop-app/releases/download/v0.9.8/Bitgesell-Wallet-0.9.8.apk
+- ### Android (APK): https://github.com/epexa/bitgesell-wallet-desktop-app/releases/download/v0.9.9/Bitgesell-Wallet-0.9.9.apk
 
 ------------
 
